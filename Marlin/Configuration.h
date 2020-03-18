@@ -362,6 +362,7 @@
 //===========================================================================
 // PID Tuning Guide here: http://reprap.org/wiki/PID_Tuning
 
+
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
 #define BANG_MAX 255     // Limits current to nozzle while in bang-bang mode; 255=full current
@@ -395,9 +396,9 @@
   //#define DEFAULT_Kd 440
 
   // From PID autotune of hotend
-  #define DEFAULT_Kp 22.54
-  #define DEFAULT_Ki 1.56
-  #define DEFAULT_Kd 81.24
+  #define DEFAULT_Kp 16.04
+  #define DEFAULT_Ki 0.76
+  #define DEFAULT_Kd 84.08
 
 #endif // PIDTEMP
 
@@ -447,9 +448,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // From PID autotune of heated bed
-  #define DEFAULT_bedKp 526.27
-  #define DEFAULT_bedKi 98.83
-  #define DEFAULT_bedKd 700.60
+  #define DEFAULT_bedKp 689.20
+  #define DEFAULT_bedKi 133.36
+  #define DEFAULT_bedKd 890.45
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
